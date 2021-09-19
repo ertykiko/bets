@@ -39,6 +39,8 @@ for odd in soup.find_all('div', attrs={'class': 'oddButtonWrapper prebootFreeze 
     counter += 1
 
 
+res = [int(i) for i in test_string.split() if i.isdigit()]
+
 print(home_odds)
 print(tie_odds)
 print(away_odds)
